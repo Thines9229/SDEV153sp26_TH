@@ -12,7 +12,6 @@ header {
        background-color: #002171; 
        color: #FFFFFF;
        font-family: Georgia, serif; 
-       background-image: url(sunset.jpg); 
 	height: 120px; 
 }
 
@@ -48,7 +47,6 @@ h3 {
 
 nav { 
        font-weight: bold;
-       background-color: #c69ad8;
        padding-top: .5em;
        padding-bottom: .5em;
        padding-right: .5em;

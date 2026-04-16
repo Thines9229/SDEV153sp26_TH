@@ -1,0 +1,53 @@
+/* Medium Display */
+@media (min-width: 600px) {
+
+h1 {
+       font-size: 2em;
+       letter-spacing: .25em;
+}
+
+ nav li { 
+       width: 12em;
+	border-bottom: none; 
+}
+
+ nav ul { 
+       display:flex;
+       flex-flow: row nowrap;
+       justify-content: space-around;
+       padding-right: 2em;
+ }
+
+ section {
+       padding-left: 2em;
+       padding-right: 2em;
+ }
+
+ #flow {
+       display: flex;
+       flex-direction: row;
+ }
+
+ #mobile {
+       display: none;
+ }
+
+ #desktop {
+       display: none;
+ }
+
+ #homehero {
+       background-size: 100% 100%;
+      
+}
+
+#yurthero {
+       background-size: 100% 100%;
+     
+}
+
+#trailhero {
+       background-size: 100% 100%;
+      
+}
+}

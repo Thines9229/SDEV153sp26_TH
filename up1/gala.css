@@ -2,81 +2,129 @@
        box-sizing: border-box;
 }
 
+table {
+       border-collapse: collapse;
+       margin: auto;
+       border: 1px solid #3399cc;
+       width: 90%; 
+}
+
+td, th {
+       padding: 5px;
+       border: 1px solid #3399cc;
+}
+
+td {
+       text-align: center;
+}
+
+.text {
+       text-align: left;
+}
+
+tr:nth-of-type(even) { 
+       background-color: #dfedf8; 
+}
+
 body { 
-       background-color: #FFFFFF; 
-       color: #666666;
-       font-family: Arial, Verdana, sans-serif; 
+       background-color:  #F0D0BE; 
+       color: #ffbe0a;
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       margin: 0;
 }
 
 header { 
-       background-color: #002171; 
-       color: #FFFFFF;
+       background-color: #99B094; 
+       color: #f1c124;
        font-family: Georgia, serif; 
-	   height: 120px; 
+	padding: 1em;
 }
 
-header a { text-decoration: none; }
-header a:link { color: #FFFFFF; }
-header a:visited { color: #FFFFFF;}
-header a:hover { color: #90c7e3; }
+header a { 
+       text-decoration: none; 
+}
+
+header a:link { 
+       color: #FFFFFF; 
+}
+
+header a:visited { 
+       color: #FFFFFF;
+}
+
+header a:hover { 
+       color: #99B094; 
+}
 
 main {
-       padding-left: 2em;
-       padding-right: 2em;
-       display:block;
-       background-color: #FFFFFF;
-       margin-left: 170px;
-       overflow: auto;
+       display: block;
+       padding-bottom: 0;
+       padding-top: 0;
+       padding-left: 1em;
+       padding-right: 1em;
 }
 
 h1 { 
        text-align: center;
-       padding-top: .5em;
-       font-size: 3em;
-       letter-spacing: 0.25em;
+       font-size: 1.5em;
 }
 
 h2 {  
-       color: #66237b; 
+       color: #fad355; 
 	font-family: Georgia, serif; 
+}
+
+h3 {
+       font-family: Georgia, serif;
 }
 
 nav { 
        font-weight: bold;
-       padding-top: .5em;
-       padding-bottom: .5em;
-       padding-right: .5em;
-       float: left;
-       width: 160px;
-       padding: 0;
        font-size: 1.2em;
-       position: fixed;
+       text-align: center;
+       background-color:  #F2EADF;
+}
+
+nav a {
+       text-decoration: none;
 }
 
 nav a:link {  
-       color: #5C7FA3 
+       color: #99B094;
 }
 
 nav a:visited { 
-       color: #344873 
+       color: #99B094;
 }
 
 nav a:hover { 
-       color: #A52A2A 
+       color: #99B094;
 }
 
 nav ul {
-       padding: 1em;
+       text-decoration: none;
+       flex-direction: column;
        list-style-type: none;
+       margin: 0;
+       padding-left: 0;
+}
+
+nav li {
+       padding-bottom: .5em;
+       padding-top: 1.2em;
+       padding-left: 1em;
+       padding-right: 1em;
+       width: 100%;
+       border-bottom: 1px solid;
 }
 
 .resort { 
-       color: #9819d2;
+       color: #F0D0BE;
        font-size: 1.2em; 
 }
 
 dt {
-       color: #002171;
+       color: #F0D0BE;
        font-weight: bold;
 }
 footer { 
@@ -84,25 +132,147 @@ footer {
        text-align: center;
        font-style: italic; 
        padding: 1em;
-       margin-left: 170px;
        background-color: #FFFFFF;
 }
 
 section {
-       float: left;
-       width: 33%;
-       padding-left: 2em;
-       padding-right: 2em;
+       padding-left: .5em;
+       padding-right: .5em;
 }
 
 #wrapper { 
-       width: 80%;
-       margin-right: auto;
-       margin-left: auto;
        background-color: #FFFFFF;
-       min-width: 960px;
-       max-width: 2048px;
-       box-shadow: 5px 5px 5px #1e1e1e;
-       background-repeat: no-repeat;
-	background-image: linear-gradient(to bottom, #FFFFFF, #b490e3); 
+}
+
+#homehero {
+       height: 300px;
+       background-image: url(coast.jpg); 
+       background-size: 200% 100%;
+      
+}
+
+#yurthero {
+       height: 300px;
+       background-image: url(yurt.jpg); 
+       background-size: 200% 100%;
+     
+}
+
+#trailhero {
+       height: 300px;
+       background-image: url(trail.jpg); 
+       background-size: 200% 100%;
+}
+
+#mobile {
+       display: inline;
+}
+
+#desktop {
+       display: none;
+}
+
+form { display: flex;
+       flex-direction: column;
+       padding-left: 1em; width: 80%; 
+}
+
+input, textarea {
+       margin-bottom: .5em;
+}
+
+#reshero {
+       height: 300px;
+       background-image: url(ocean.jpg); 
+       background-size: 200% 100% no-repeat;
+}
+
+/* Medium Display */
+@media (min-width: 600px) {
+
+h1 {
+       font-size: 2em;
+       letter-spacing: .25em;
+}
+
+ nav li { 
+       width: 12em;
+	border-bottom: none; 
+}
+
+ nav ul { 
+       display:flex;
+       flex-flow: row nowrap;
+       justify-content: space-around;
+       padding-right: 2em;
+ }
+
+ section {
+       padding-left: 2em;
+       padding-right: 2em;
+ }
+
+ #flow {
+       display: flex;
+       flex-direction: row;
+ }
+
+ #mobile {
+       display: none;
+ }
+
+ #desktop {
+       display: none;
+ }
+
+ #homehero {
+       background-size: 100% 100%;
+      
+}
+
+#yurthero {
+       background-size: 100% 100%;
+     
+}
+
+#trailhero {
+       background-size: 100% 100%;
+      
+}
+
+form {
+       display: grid;
+       width: 60%;
+       grid-gap: 1em;
+       grid-template-columns: 10em 1fr;
+}
+
+input[type="submit"] { 
+       grid-column: 2 / 3;
+       width: 10em;
+}
+
+#reshero {
+        background-size: 100% 100%;
+}
+
+
+}
+ 
+/* Large Display */
+@media (min-width: 1024px) {
+
+  body { 
+       background-image: linear-gradient(to bottom, #F0D0BE 20%, #99B094 60%, #F0D0BE 100%); 
+}
+       
+       nav ul {
+              padding-right: 10%;
+              padding-left: 10%;
+}
+       #wrapper {
+              margin: auto;
+              width: 80%;
+       }
+       
 }

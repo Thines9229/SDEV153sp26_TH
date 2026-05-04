@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Universe x Gal Cosmetics::Contact Us</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="gala.css" rel="stylesheet">
+<script>
+function validateForm() {
+    const phonenumber = document.forms[0].myPhone.value
+     const regex = /^\d{3}-\d{3}-\d{4}$/;
+        if (regex.test(phonenumber)) {
+          return true;
+        } else {
+          alert(
+            "invalid phone number: This must be a 10 digit phine number with a 3 digit area code, "+
+            " a dash, 3 digits for the first part of the phone number, a dash, "+
+            "and 4 more digitd for the remainder of the phone number."
+          );
+          return false;
+        }
+      }
+</script>
+</head>
+<body>
+<header>
+  <h1>
+  <a href="index.html">Universe x Gal Cosmetics</a>
+  </h1>
+</header>
+<nav>
+  <ul> 
+    <li><a href="index.html">Home</a></li>
+    <li><a href="dry.html">Dry Skin</a></li>  
+	  <li><a href="oily.html">Oily Skin</a></li> 
+    <li><a href="combination.html">Combination</a></li>
+    <li><a href="all.html">All Skin Types</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+</nav>
+<div id = "wrapper">
+<main>
+ <h3>Contact Us</h3>
+ <p>Required fields are marked with an asterisk*</p>
+ <form method="post" action="https://webdevbasics.net/scripts/pacific.php" 
+    onsubmit="return validateForm();">
+  <label for="myFName">*First Name:</label>
+  <input type="text" name="myFName" id="myFName" required>
+  <label for="myLName">*Last Name:</label>
+  <input type="text" name="myLName" id="myLName" required>
+  <label for="myEmail">*E-mail:</label>
+  <input type="text" name="myEmail" id="myEmail" required>
+  <label for="myPhone">*Phone:</label>
+  <input type="text" name="myPhone" id="myPhone" minlength="12" maxlength="12">
+  <label for="myComments">Comments:</label>
+  <textarea name="myComments" id="myComments" rows="2" cols="20"></textarea>
+  <input type="submit" id="mySubmit" value="Submit">
+</form>
+</main>
+<footer>
+  Copyright &copy; 2020 Universe x Gal Cosmetics <br>
+  <a href="mailto:UXG@COS.com">UXG@COS.com</a>
+  <div>
+    <script>
+      document.write("<p> This document was last modified on: " , document.lastModified , "</p>");
+    </script>
+  </div>
+</footer>
+</div>
+</body>
+</html>

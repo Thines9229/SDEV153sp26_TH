@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Pacific Trails Resort::Yurts Packages</title>
+<meta charset="utf-8">
+<link href="Pacific.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="descriprion" content="Select Pacific Trails Resort trip packages and calculate your total cost.">
+<script>
+  function calculateTotal() {
+    let total = 0;
+    if (document.getElementById("weekend").checked) {
+      total += 450;
+    }
+
+    if (document.getElementById("zen").checked) {
+      total += 600;
+    }
+
+    if (document.getElementById("kayak").checked) {
+      total += 500;
+    }
+
+    alert("Your total package price is $" + total.toFixed(2));
+    return false;
+  }
+</script>
+</head>
+<body>
+<header>
+  <h1>
+  <a href="index.html">Pacific Trails Resort</a>
+  </h1>
+</header>
+<nav>
+  <ul>
+  <li><a href="index.html">Home</a></li> 
+	<li><a href="activities.html">Activities</a></li> 
+  <li><a href="reservations.html">Reservations</a></li>
+  <li><a href="yurts.html">Yurts</a></li>
+  <li><a href="yurtspack.html">Yurts Packages</a></li>
+  </ul> 
+</nav>
+<div id = "wrapper">
+<div id = "yurthero"></div>
+<main>
+ <h2>Trip Packages</h2>
+ <p>Select one or more packages to calculate the total price.</p>
+ 
+ <form onsubmit="return calculateTotal () ;">
+    <p>
+      <input type="checkbox" id="weekend" value="450">
+      <lable for="weekend">Weekend Escape - $450</lable>
+    </p>
+     <p>
+      <input type="checkbox" id="zen" value="600">
+      <lable for="zen">Zen Retreat - $600</lable>
+    </p>
+     <p>
+      <input type="checkbox" id="kayak" value="500">
+      <lable for="weekend">Kayak Away - $500</lable>
+    </p>
+    <input type="submit" value="Calculate Total"?>
+ </form>
+</main>
+<footer>
+  Copyright &copy; 2020 Pacific Trails Resort <br>
+  <a href="mailto:tirah@hines.com">tirah@hines.com</a>
+</footer>
+</div>
+</body>
+</html>
+
+
+
+
+

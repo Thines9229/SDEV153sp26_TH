@@ -8,19 +8,19 @@
 <script>
   function calculateTotal() {
     let total = 0;
-    if (document.getElementById("c").checked) {
+    if (document.getElementById("cleanser").checked) {
       total += 18.99;
     }
 
-    if (document.getElementById("s").checked) {
+    if (document.getElementById("serum").checked) {
       total += 39.99;
     }
 
-    if (document.getElementById("m").checked) {
+    if (document.getElementById("moister").checked) {
       total += 13.34;
     }
 
-    if (document.getElementById("ss").checked) {
+    if (document.getElementById("sunscreen").checked) {
       total += 36.99;
     }
 
@@ -46,18 +46,56 @@
   </ul>
 </nav>
 <div id = "wrapper">
+  <div id = "dryhero"></div>
   <div class="dry">
-    <h3>text</h3>
-    <img src="CeraVe Hydrating Cleanser.jpg" alt="Trail Guide" width="320" height="240">
-    <h3>text</h3>
-    <img src="La Roche-Posay Hyalu B5.jpg" alt="Trail Guide" width="320" height="240">
-    <h3>text</h3>
-    <img src="ceravemoist.jpg" alt="Trail Guide" width="320" height="240">
-    <h3>text</h3>
-    <img src="dsscrean.jpg" alt="Trail Guide" width="320" height="240">
-  </div>
+    <br><br><br><br><br><br><h2>
+      Dry skin, also known as xerosis, occurs when your skin loses moisture and hydration, 
+      leading to rough, flaky, or scaly patches. Common causes include cold or dry weather, 
+      sun damage, harsh soaps, and overbathing. To relieve dry skin, dermatologists 
+      recommend moisturizing regularly, using gentle cleansers, and protecting your skin from the sun. 
+      Additionally, it's important to stay hydrated and consider using a humidifier in dry environments. 
+      For persistent issues, consulting a dermatologist may be beneficial.
+    </h2><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h2>CeraVe Hydrating Facial Cleanser</h2>
+    <img src="CeraVeHydratingCleanser.jpg" alt="Cleanser" width="320" height="240">
+    <h2>
+      CeraVe Hydrating Facial Cleanser, also marketed as a Moisturizing Face Wash 
+      for dry skin, is specifically formulated for normal to dry or sensitive skin types. 
+      It is a non-foaming, lotion-like cleanser designed to remove dirt, oil, and makeup 
+      without stripping the skin of its natural moisture, leaving it soft and hydrated
+    </h2><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h2>La Roche-Posay Hyalu B5 Pure Hyaluronic Acid Serum</h2>
+    <img src="LaRochePosayHyaluB5.jpg" alt="Serum" width="320" height="240">
+    <h2>
+      Ultra Hydrating Hyaluronic Acid Serum for Barrier Repair: This hydaluronic 
+      acid face care and neck serum, leaves skin feeling plump to the touch and 
+      helps repair skin by replenishing the natural moisture barrier for a supple 
+      feel
+    </h2><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h2>CeraVe Moisturizing Cream</h2>
+    <img src="ceravemoist.jpg" alt="Moisturizer" width="320" height="240">
+    <h2>
+      CeraVe Moisturizing Cream is formulated for normal to dry skin and 
+      provides 24-hour hydration using a combination of ceramides, hyaluronic acid, 
+      dimethicone, and petrolatum . Its rich texture absorbs quickly without leaving 
+      a greasy residue, making it suitable for face, body, and hands. The product 
+      is fragrance-free, oil-free, hypoallergenic, and non-comedogenic, which makes 
+      it safe for sensitive skin, including those experiencing eczema or dryness 
+      exacerbated by environmental factors.
+    </h2><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h2>Vichy LiftActiv Peptide-C Face Sunscreen Moisturizer</h2>
+    <img src="dsscrean.jpg" alt="Sunscreen" width="320" height="240">
+    <h2>
+      Your skin’s exposome defense, LiftActiv Peptide-C Sunscreen SPF 
+      30 is an anti-aging daily moisturizer with broad spectrum UVA and UVB protection. 
+      Dermatologist tested formula of Phyto Peptides, Vitamin C and 15 Mineral-Rich 
+      Vichy Volcanic Water improves the look of wrinkles, dark spots, dull and uneven 
+      skin tone, and loss of firmness. Visibly brighten skin tone and smooth the look
+      of skin while boosting hydration.
+    </h2><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
 
-  <h3>Cosmetic Sizes</h3>
+  <h2>Cosmetic Sizes</h2>
   <p>These brands come in a selected amout of 
     sizes to acommidate to each persoms needs. 
     See your options before you buy!</p>
@@ -100,22 +138,23 @@
  <form onsubmit="return calculateTotal () ;">
     <p>
       <input type="checkbox" id="c" value="18.99">
-      <lable for="weekend">CeraVe Hydrating Facial Cleanser - $18.99</lable>
+      <label for="c">CeraVe Hydrating Facial Cleanser - $18.99</label>
     </p>
-     <p>
+    <p>
       <input type="checkbox" id="s" value="39.99">
-      <lable for="zen">La Roche-Posay Hyalu B5 Pure Hyaluronic Acid Serum - $39.99</lable>
+      <label for="s">La Roche-Posay Hyalu B5 Pure Hyaluronic Acid Serum - $39.99</label>
     </p>
-     <p>
+    <p>
       <input type="checkbox" id="m" value="13.34">
-      <lable for="weekend">CeraVe Moisturizing Cream - $13.34</lable>
+      <label for="m">CeraVe Moisturizing Cream - $13.34</label>
     </p>
-     <p>
+    <p>
       <input type="checkbox" id="ss" value="36.99">
-      <lable for="weekend">Vichy LiftActiv Peptide-C Face Sunscreen Moisturizer - $36.99</lable>
+      <label for="ss">Vichy LiftActiv Peptide-C Face Sunscreen Moisturizer - $36.99</label>
     </p>
-    <input type="submit" value="Calculate Total"?>
+    <input type="submit" value="Calculate Total">
  </form>
+ </div>
 </div>
   <footer>
   Copyright &copy; 2020 Universe x Gal Cosmetics <br>

@@ -9,19 +9,19 @@
   function calculateTotal() {
     let total = 0;
     if (document.getElementById("c").checked) {
-      total += 39;
+      total += 12.37;
     }
 
     if (document.getElementById("s").checked) {
-      total += 5.97;
+      total += 18.99;
     }
 
     if (document.getElementById("m").checked) {
-      total += 13.97;
+      total += 22.00;
     }
 
     if (document.getElementById("ss").checked) {
-      total += 37.99;
+      total += 19.00;
     }
 
     alert("Your total estimated price is $" + total.toFixed(2));
@@ -46,18 +46,39 @@
   </ul>
 </nav>
 <div id = "wrapper">
+   <div id = "oilhero"></div>
   <div class="oil">
-    <h3>text</h3>
-    <img src="oilcleanser.jpg" alt="Trail Guide" width="320" height="240">
-    <h3>text</h3>
-    <img src="oilserm.jpg" alt="Trail Guide" width="320" height="240">
-    <h3>text</h3>
-    <img src="oilmoist.jpg" alt="Trail Guide" width="320" height="240">
-    <h3>text</h3>
-    <img src="oilsun.jpg" alt="Trail Guide" width="320" height="240">
-  </div>
+    <br><br><br><br><br><br><h2>You know you have oily skin if your skin constantly looks shiny, 
+      and you go through several blotting sheets a day. Oily skin can 
+      even feel greasy within hours of cleansing. Breakouts are also more 
+      likely because the sebum mixes with dead skin cells and gets stuck in your pores. T
+      he causes of oily skin include genetic, environmental, and lifestyle factors. 
+      While you can’t necessarily get rid of oily skin, you can take steps to make your skin less oily.</h2><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h2>CeraVe Foaming Facial Cleanser</h2>
+      <img src="oilcleanser.jpg" alt="Cleanser" width="320" height="240">
+    <h2>This cleanser is formulated specifically for oily and combination skin. 
+      It is designed for daily use, effectively cleansing without over-drying 
+      the skin or disrupting the natural moisture balance, which is important 
+      for controlling oil production and preventing irritation.</h2><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h2>TruSkin Hyaluronic Acid Serum</h2>
+      <img src="oilserm.jpg" alt="Serum" width="320" height="240">
+    <h2>TruSkin Hyaluronic Acid Serum is an ultra-hydrating, fast-absorbing 
+      facial serum formulated to replenish moisture, smooth skin, and reduce 
+      the appearance of fine lines and wrinkles. Its lightweight formula is 
+      suitable for most skin types, including dry, sensitive, and aging skin</h2><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h2>LANEIGE Water Bank Blue Hyaluronic Cream Moisturizer</h2>
+      <img src="oilmoist.jpg" alt="Moisturizer" width="320" height="240">
+    <h2>LANEIGE is a Korean skincare brand known for its advanced hydration solutions. 
+      The Water Bank Blue Hyaluronic Cream is part of their Water Bank line, 
+      which focuses on long-lasting moisture retention and strengthening the skin barrier.</h2><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h2>Hero Cosmetics Force Shield Superlight Sunscreen</h2>
+      <img src="oilsun.jpg" alt="Sunscreen" width="320" height="240">
+    <h2>Hero Force Shield Superlight Sunscreen SPF 30 is a mineral-based, 
+      lightweight sunscreen designed to protect the skin from UVA and UVB 
+      rays while being non-comedogenic and suitable for sensitive or acne-prone skin.</h2><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
 
-  <h3>Cosmetic Sizes</h3>
+  <h2>Cosmetic Sizes</h2>
   <p>These brands come in a selected amout of 
     sizes to acommidate to each persoms needs. 
     See your options before you buy!</p>
@@ -100,24 +121,25 @@
  <form onsubmit="return calculateTotal () ;">
     <p>
       <input type="checkbox" id="c" value="39.00">
-      <lable for="weekend">Youth To The People Superfood Facial Cleanser - $39.00</lable>
+      <label for="c">CeraVe Foaming Facial Cleanser - $12.37</label>
     </p>
      <p>
       <input type="checkbox" id="s" value="600">
-      <lable for="zen">Good Molecules Niacinamide Serum - $5.97</lable>
+      <label for="s">TruSkin Hyaluronic Acid Serum - $18.99</label>
     </p>
      <p>
       <input type="checkbox" id="m" value="500">
-      <lable for="weekend">Vanicream Daily Facial Moisturizer With Ceramides and Hyaluronic Acid - $13.97</lable>
+      <label for="m">LANEIGE Water Bank Blue Hyaluronic Cream Moisturizer - $22.00</label>
     </p>
      <p>
       <input type="checkbox" id="ss" value="500">
-      <lable for="weekend">La Roche-Posay Anthelios Melt-In Milk Sunscreen SPF 60, Sunscreen For Body & Face - $37.99</lable>
+      <label for="ss">Hero Cosmetics Force Shield Superlight Sunscreen - $19.00</label>
     </p>
-    <input type="submit" value="Calculate Total"?>
+    <input type="submit" value="Calculate Total">
  </form>
+ </div>
 </div>
-  <footer>
+<footer>
   Copyright &copy; 2020 Universe x Gal Cosmetics <br>
   <a href="mailto:UXG@COS.com">UXG@COS.com</a>
   <div>

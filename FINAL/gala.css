@@ -84,6 +84,11 @@ h2 {
 	font-family: Georgia, serif; 
        text-decoration: solid;
        font-weight: bold;
+       font-family: Georgia, serif;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
        
 }
 
@@ -92,7 +97,7 @@ h3 {
        display: flex;
        flex-direction: column;
        align-items: center;
-       text-align: left;
+       text-align: center;
 }
 
 nav { 
@@ -179,7 +184,7 @@ input, textarea {
        display: flex;
        flex-direction: column;
        align-items: center;
-       text-align: left;
+       text-align: center;
 }
 
 .dry img {
@@ -191,7 +196,7 @@ input, textarea {
        display: flex;
        flex-direction: column;
        align-items: center;
-       text-align: left;
+       text-align: center;
 }
 
 .oil img {
@@ -203,7 +208,7 @@ input, textarea {
        display: flex;
        flex-direction: column;
        align-items: center;
-       text-align: left;
+       text-align: center;
 }
 
 .comb img {
@@ -215,7 +220,7 @@ input, textarea {
        display: flex;
        flex-direction: column;
        align-items: center;
-       text-align: left;
+       text-align: center;
 }
 
 .all img {
@@ -228,6 +233,52 @@ input, textarea {
        flex-direction: column;
        align-items: center;
        text-align: center;
+}
+
+.box {
+    border: 2px solid black; /* Just to show the edges */
+    padding: 20px;           /* Space inside the box */
+    width: 300px;            /* Optional: set a width */
+}
+
+#dryhero {
+       height: 250px;
+       background-image: url(drybanner.png); 
+       background-size: 100%;
+}
+
+#oilhero {
+       height: 250px;
+       background-image: url(oilbanner.png); 
+       background-size: 100%;
+}
+
+#combhero {
+       height: 250px;
+       background-image: url(combbanner.png); 
+       background-size: 100%;
+}
+
+#allhero {
+       height: 250px;
+       background-image: url(allbanner.png); 
+       background-size: 100%;
+}
+
+#homehero {
+       height: 250px;
+       background-image: url(homebanner.png); 
+       background-size: 100%;
+}
+
+#contactushero {
+       height: 250px;
+       background-image: url(contactusbanner.png); 
+       background-size: 100%;
+}
+
+.style {
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Medium Display */
@@ -278,6 +329,30 @@ form {
 input[type="submit"] { 
        grid-column: 2 / 3;
        width: 10em;
+}
+
+#dryhero {
+       background-size: 100% 100%;
+}
+
+#oilhero {
+       background-size: 100% 100%;
+}
+
+#combhero {
+       background-size: 100% 100%
+}
+
+#allhero {
+       background-size: 100% 100%;
+}
+
+#homehero {
+       background-size: 100% 100%;
+}
+
+#contactushero {
+       background-size: 100% 100%;
 }
 
 }
